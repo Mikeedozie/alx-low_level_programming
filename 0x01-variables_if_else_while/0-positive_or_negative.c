@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 /* more headers goes there */
-#include <studio.h>
+#include <stdio.h>
 
 /**
  * main - This is where the whole process begins

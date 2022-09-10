@@ -12,7 +12,8 @@ int main(void)
 	digits = 10;
 
 	for (start = 0; start < digits; start++)
-		printf("%d\n", start);
+		printf("%d", start);
+		printf("\n");
 	return (0);
 
 }

@@ -14,4 +14,5 @@ int main(void)
 	for (capital = 'A'; capital <= 'Z'; capital++)
 		putchar(capital);
 	putchar('\n');
+	return (0);
 }

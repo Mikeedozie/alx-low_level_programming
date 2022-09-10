@@ -1,6 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
 #include <stdio.h>
 
 /**
@@ -13,6 +10,6 @@ int main(void)
 	char letters;
 
 	for (letters = "a"; letters <= "z"; letters++)
-		putchar(letters)
+		putchar(letters);
 	return (0);
 }

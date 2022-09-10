@@ -9,10 +9,9 @@ int main(void)
 {
 	int digits, start;
 
-	start = 0;
 	digits = 10;
 
-	for (start; start < digits; start++)
+	for (start = 0; start < digits; start++)
 		printf("%d\n", start);
 	return (0);
 

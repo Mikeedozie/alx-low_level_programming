@@ -13,7 +13,7 @@ int main(void)
 
 	for (start = 0; start < digits; start++)
 		printf("%d", start);
-		printf("\n");
+	printf("\n");
 	return (0);
 
 }

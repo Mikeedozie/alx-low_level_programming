@@ -10,7 +10,7 @@
 
 int putchar(void)
 {
-	printf("_putchar\n");
+	return (write(1, "_putchar\n", 10));
 }
 
 #endif

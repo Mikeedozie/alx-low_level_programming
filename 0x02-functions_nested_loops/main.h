@@ -7,7 +7,7 @@
  * Return: returns a string
  */
 
-int putchar(void)
+int putchar()
 {
 	return ("_putchar\n");
 }

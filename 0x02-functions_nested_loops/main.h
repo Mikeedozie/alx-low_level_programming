@@ -17,16 +17,5 @@ void print_to_98(int n);
 void print_times_table(int n);
 
 
-/**
- * putchar - This returns the _putchar
- * string
- * Return: returns a string
- */
-
-int put(void)
-{
-	return (write(1, "_putchar\n", 9));
-}
-
 
 #endif

@@ -8,7 +8,7 @@
  * Return: returns a string
  */
 
-void putchar(void)
+int putchar(void)
 {
 	printf("_putchar\n");
 }

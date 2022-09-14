@@ -1,3 +1,4 @@
+#include <stdio.h>
 #ifndef MAIN_H
 #define MAIN_H
 
@@ -7,9 +8,9 @@
  * Return: returns a string
  */
 
-int putchar()
+void putchar(void)
 {
-	return ("_putchar\n");
+	printf("_putchar\n");
 }
 
 #endif

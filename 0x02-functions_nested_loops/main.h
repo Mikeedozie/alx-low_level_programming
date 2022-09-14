@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 #ifndef MAIN_H
 #define MAIN_H
 
@@ -8,7 +8,7 @@
  * Return: returns a string
  */
 
-int putchar(void)
+int put(void)
 {
 	return (write(1, "_putchar\n", 10));
 }

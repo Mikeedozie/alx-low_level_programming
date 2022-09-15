@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * main - This is where the whole
+ * integer_state - This is where the whole
  * process begins
  * Return: This returns an exit code of 0
  */
 
-int main(void)
+int integer_state(void)
 {
 	int i = 0;
 

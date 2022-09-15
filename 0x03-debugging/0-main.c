@@ -3,16 +3,17 @@
 /**
  * positive_or_negative  - This is where the whole
  * process begins
+ * @i: This is the integer to test
  * Return: This returns an exit code of 0
  */
 
 void positive_or_negative(int i)
 {
 	if (i > 0)
-		return ("%d is positive\n", i);
+		printf("%d is positive\n", i);
 	else if (i == 0)
-		return ("%d is zero\n", i);
+		printf("%d is zero\n", i);
 	else
-		return ("%d is negative\n", i);
+		printf("%d is negative\n", i);
 	return (0);
 }

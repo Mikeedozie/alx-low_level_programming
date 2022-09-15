@@ -3,7 +3,7 @@
 /**
  * positive_or_negative  - This is where the whole
  * process begins
- * @i: This is the integer to test
+ * @i: This is the integer to test.
  * Return: This returns an exit code of 0
  */
 

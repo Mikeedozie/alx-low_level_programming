@@ -8,7 +8,7 @@
  * Return: Void
  */
 
-void puts2(char, *str)
+void puts2(char *str)
 {
 	if (i % 2 == O)
 		printf("%d", i);

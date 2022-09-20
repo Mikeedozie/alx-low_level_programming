@@ -10,6 +10,8 @@
 
 void puts2(char *str)
 {
-	if (i % 2 == O)
+	char i =0
+	for (i=0; i strlen(str); i++)
+		if (i % 2 == O)
 		printf("%d", i);
 }

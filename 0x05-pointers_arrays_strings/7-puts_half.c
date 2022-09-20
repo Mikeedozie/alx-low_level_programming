@@ -4,9 +4,9 @@
 
 void puts_half(char *str)
 {
-	int i, len, n=0;
+	int i, len;
 	len = strlen(str);
-
+	int n;
 	for (i = 0; i <= len; i++)
 	{
 		if (len % 2 == 0)

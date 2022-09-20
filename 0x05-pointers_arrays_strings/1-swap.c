@@ -5,12 +5,13 @@
  * integers in the main.c file given by ALX
  * @a: This is the first pointer value
  * @b: This is the second pointer value
- * @tmp: This holds one of the variables to swap
+ * @tmp: This is the temporary value
  * Return: Void
  */
 
 void swap_int(int *a, int *b)
 {
-	*a = &b;
-	*b = &a;
+	int tmp = *a;
+	*a = *b;
+	*b = tmp;
 }

@@ -1,26 +1,18 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
 
 /**
- * puts2 - This checks for even numbers in the given
- * string
- * @str: This is the character to check
- * Return: Void
+ * puts2 - Prints one char out of two of a string.
+ * @str: The string containing characters.
  */
-
 void puts2(char *str)
 {
-	int l, check;
-	int i = 0;
-	l = strlen(str);
-	
-	for (i = 0; i < l; i++)
-	
-	{
-		check = i % 2;
-		if (check == 2)
-			printf("%c - %d\n", str[check], check);
-	}
-	printf("\n");
+	int index = 0, len = 0;
+
+	while (str[index++])
+		len++;
+
+	for (index = 0; index < len; index += 2)
+		_putchar(str[index]);
+
+	_putchar('\n');
 }

@@ -3,6 +3,7 @@
 
 /**
  * _strlen - This counts the number of char in s
+ * @s: This holds the string to be counted
  * Return: gives out counted value
  */
 

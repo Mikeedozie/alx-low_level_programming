@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 
 /**
  * puts2 - This checks for even numbers in the given
@@ -10,8 +11,12 @@
 
 void puts2(char *str)
 {
-	char i =0
-	for (i=0; i strlen(str); i++)
-		if (i % 2 == O)
-		printf("%d", i);
+	int l;
+	char i =0;
+	l = strlen(str);
+
+	for (i=0; i < l; i++)
+		if (i % 2 == 0)
+			printf("%d", i);
+	printf("\n");
 }

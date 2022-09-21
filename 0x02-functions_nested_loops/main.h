@@ -18,6 +18,6 @@ void print_times_table(int n);
 
 int put(void)
 {
-return (write(1, "_putchar", 9));
+return (write(1, "_putchar\n", 9));
 }
 #endif

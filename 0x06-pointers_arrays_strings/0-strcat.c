@@ -21,7 +21,6 @@
 
 char *_strcat(char *dest, char *src)
 {
-<<<<<<< HEAD
 	int i;
 	int j;
 
@@ -36,8 +35,4 @@ char *_strcat(char *dest, char *src)
 
 	return (dest);
 
-=======
-	printf("%s%s", dest, src);
-	return (0);
->>>>>>> c02c9838204d126dec97ed1243fc3a4d65979b2c
 }

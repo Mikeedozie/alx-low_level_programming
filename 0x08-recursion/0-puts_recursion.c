@@ -1,9 +1,15 @@
 #include "main.h"
 
+/**
+ * _puts_recursion - This takes in a string literal
+ * @s: pointer to char
+ * Return: No value.
+ */
 
 void _puts_recursion(char *s)
 {
 	if (*s == '\0')
 		return;
-	return (_putchar(*s) + _puts_recursion(*s++);
+	_putchar(*s), _puts_recursion(s + 1);
+	_putchar('\n');
 }

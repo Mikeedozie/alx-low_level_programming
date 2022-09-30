@@ -12,7 +12,6 @@
 int main(int argc, char *argv[])
 {
 	int init = 1, sum = 1;
-	
 
 	if  ((argc - 1) == 1)
 	{

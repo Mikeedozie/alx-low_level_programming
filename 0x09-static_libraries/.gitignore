@@ -1,6 +1,5 @@
 *.c
 *.o
-/main.c
 /quote
 /test
 /main

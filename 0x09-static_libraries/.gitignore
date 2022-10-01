@@ -3,3 +3,5 @@
 /quote
 /test
 /main
+/main.c
+.*

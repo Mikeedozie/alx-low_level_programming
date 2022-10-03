@@ -7,7 +7,7 @@
  * the array
  *
  * @size: size of the array
- * 
+ *
  * @c: value to be stored in the array
  *
  * Return: pointer
@@ -20,15 +20,12 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 		return (NULL);
-	
-	char_arr = (char *)malloc(size * sizeof(int));
+
+	char_arr = (char *)malloc(size * sizeof(char));
 
 	if (char_arr == NULL)
 		return (NULL);
-	else
-	{
-		for (; i < size; i++)
-			*(char_arr + i) = c;
-	}
+	for (; i < size; i++)
+		*(char_arr + i) = c;
 	return (char_arr);
 }

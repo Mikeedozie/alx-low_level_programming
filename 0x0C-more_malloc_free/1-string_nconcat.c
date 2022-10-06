@@ -34,6 +34,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (n == j)
 		n = j;
+	else
+		n = n;
 
 	total = i + n + 1;
 

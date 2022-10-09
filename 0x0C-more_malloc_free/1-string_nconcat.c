@@ -2,66 +2,43 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat - This concatenates a string to
- * a particular length
+ * string_nconcat - Concatenates two strings using at
+ *                  most an inputted number of bytes.
+ * @s1: The first string.
+ * @s2: The second string.
+ * @n: The maximum number of bytes of s2 to concatenate to s1.
  *
- * @s1: first string
- *
- * @s2: second string
- *
- * @n: number of string 2 to copy
- *
- * Return: Pointer to copied string
- *
+ * Return: If the function fails - NULL.
+ *         Otherwise - a pointer to the concatenated space in memory.
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-
-	unsigned int i, j, x, y, z, total;
-	char *ptr;
-
-
+	char *concat;
+	unsigned int len = n, index;
 
 	if (s1 == NULL)
 		s1 = "";
+
 	if (s2 == NULL)
 		s2 = "";
 
-	for (i = 0; s1[i] != '\0'; i++)
-		;
+	for (index = 0; s1[index]; index++)
+		len++;
 
-	for (j = 0; s2[j] != '\0'; j++)
-		;
+	concat = malloc(sizeof(char) * (len + 1));
 
-	if ((int)n < 0)
+	if (concat == NULL)
 		return (NULL);
 
-	if (n == j)
-		n = j;
-	else
-		n = n;
+	len = 0;
 
-	total = i + n + 1;
+	for (index = 0; s1[index]; index++)
+		concat[len++] = s1[index];
 
-	ptr = malloc(sizeof(char) * total);
+	for (index = 0; s2[index] && index < n; index++)
+		concat[len++] = s2[index];
 
-	if (ptr == NULL)
-		return (NULL);
+	concat[len] = '\0';
 
-	for (x = 0; x < i; x++)
-	{
-		ptr[x] = s1[x];
-	}
-
-	for (y = 0; ptr[y] != '\0'; y++)
-		;
-	for (z = 0; z <= n; z++)
-	{
-		ptr[y + z] = s2[z];
-	}
-
-	ptr[y + z] = '\0';
-
-	return (ptr);
+	return (concat);
 }

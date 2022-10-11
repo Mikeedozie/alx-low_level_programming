@@ -1,13 +1,6 @@
 #ifndef FUNCTION_LIKE_MACRO
 #define FUNCTION_LIKE_MACRO
-
-int ABS(int x)
-{
-	if (x < 0)
-		return (-x);
-	return (x);
-}
-
+#define ABS(x) ((x) > (0) ? (x) : (-x))
 
 
 #endif

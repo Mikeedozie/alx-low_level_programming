@@ -3,13 +3,15 @@
 #include <stdlib.h>
 
 /**
- * dog_t new_dog - creates another dog
+ * new_dog - creates another dog
  *
  * @name: Dogs name
  *
  * @age: Dogs age
  *
  * @owner: Dog owner
+ *
+ * Return: Dog
  */
 
 
